@@ -136,6 +136,10 @@ a:hover {
   top: -7px;
 }
 
+.contact {
+  font-size: 1.5vh;
+}
+
 section.banner-topo {
   height: 100vh;
   width: 100%;
