@@ -90,7 +90,7 @@ a:hover {
   overflow-y: auto;
 }
 #menu a {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   margin: 0 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -132,7 +132,25 @@ a:hover {
   top: -7px;
 }
 .contact {
-  font-size: 1.5vh;
+  font-size: 5vh;
+  text-align: center;
+}
+.contact-email {
+  font-size: 3.5vh;
+}
+
+@media screen and (max-width: 912px) {
+  .contact {
+    font-size: 3vh;
+  }
+  .contact-email {
+    font-size: 2.5vh;
+  }
+} 
+@media screen and (max-width: 767px) {
+  .contact-email {
+    text-align: center;
+  }
 }
 
 section.banner-topo {
@@ -310,7 +328,6 @@ section#portfolio {
     text-align: center;
     padding-bottom: 5vh;
   }
-  //
   p {
     color: #fff;
     text-align: justify;
@@ -332,6 +349,10 @@ section#portfolio {
     display: flex;
     height: 20vh;
     align-items: center;
+  }
+  .git {
+    position: relative;
+    top: 2vh;
   }
 
   @media screen and (max-width: 912px) {

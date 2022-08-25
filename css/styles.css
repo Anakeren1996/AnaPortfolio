@@ -88,7 +88,7 @@ a:hover {
 }
 
 #menu a {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   margin: 0 1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
@@ -137,9 +137,28 @@ a:hover {
 }
 
 .contact {
-  font-size: 1.5vh;
+  font-size: 5vh;
+  text-align: center;
 }
 
+.contact-email {
+  font-size: 3.5vh;
+}
+
+@media screen and (max-width: 912px) {
+  .contact {
+    font-size: 3vh;
+  }
+
+  .contact-email {
+    font-size: 2.5vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-email {
+    text-align: center;
+  }
+}
 section.banner-topo {
   height: 100vh;
   width: 100%;
@@ -339,6 +358,10 @@ section#portfolio .text {
   display: flex;
   height: 20vh;
   align-items: center;
+}
+section#portfolio .git {
+  position: relative;
+  top: 2vh;
 }
 @media screen and (max-width: 912px) {
   section#portfolio {
