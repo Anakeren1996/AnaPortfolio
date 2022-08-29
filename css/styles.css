@@ -249,10 +249,11 @@ section#sobre p {
   color: #222;
 }
 section#sobre .img-fluid {
-  width: 40vh;
+  width: 70%;
   height: auto;
   margin: auto;
   display: block;
+  border-radius: 20px;
 }
 section#sobre a {
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
@@ -275,11 +276,19 @@ section#sobre .btn-about {
 }
 @media screen and (max-width: 767px) {
   section#sobre {
-    height: 100vh;
+    height: 90vh;
     align-items: flex-start;
   }
   section#sobre .sobre-mim {
     height: 42vh;
+  }
+  section#sobre .img-fluid {
+    width: 90%;
+  }
+}
+@media screen and (width: 540px) {
+  section#sobre {
+    height: 100vh;
   }
 }
 

@@ -146,7 +146,7 @@ a:hover {
   .contact-email {
     font-size: 2.5vh;
   }
-} 
+}
 @media screen and (max-width: 767px) {
   .contact-email {
     text-align: center;
@@ -246,10 +246,11 @@ section#sobre {
     color: #222;
   }
   .img-fluid {
-    width: 40vh;
+    width: 70%;
     height: auto;
     margin: auto;
     display: block;
+    border-radius: 20px;
   }
   a {
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
@@ -270,11 +271,17 @@ section#sobre {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 100vh;
+    height: 90vh;
     align-items: flex-start;
     .sobre-mim {
       height: 42vh;
     }
+    .img-fluid {
+      width: 90%;
+    }
+  }
+  @media screen and (width: 540px) {
+    height: 100vh;
   }
 }
 
