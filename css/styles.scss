@@ -271,7 +271,7 @@ section#sobre {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 90vh;
+    height: 100vh;
     align-items: flex-start;
     .sobre-mim {
       height: 42vh;
@@ -279,9 +279,6 @@ section#sobre {
     .img-fluid {
       width: 90%;
     }
-  }
-  @media screen and (width: 540px) {
-    height: 100vh;
   }
 }
 

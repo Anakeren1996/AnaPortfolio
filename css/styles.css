@@ -276,7 +276,7 @@ section#sobre .btn-about {
 }
 @media screen and (max-width: 767px) {
   section#sobre {
-    height: 90vh;
+    height: 100vh;
     align-items: flex-start;
   }
   section#sobre .sobre-mim {
@@ -284,11 +284,6 @@ section#sobre .btn-about {
   }
   section#sobre .img-fluid {
     width: 90%;
-  }
-}
-@media screen and (width: 540px) {
-  section#sobre {
-    height: 100vh;
   }
 }
 
