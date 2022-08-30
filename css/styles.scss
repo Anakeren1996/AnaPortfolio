@@ -250,7 +250,7 @@ section#sobre {
     height: auto;
     margin: auto;
     display: block;
-    border-radius: 20px;
+    border-radius: 180px;
   }
   a {
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
@@ -274,7 +274,7 @@ section#sobre {
     height: 100vh;
     align-items: flex-start;
     .sobre-mim {
-      height: 42vh;
+      height: 50vh;
     }
     .img-fluid {
       width: 90%;
@@ -372,7 +372,7 @@ section#portfolio {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 130vh;
+    height: 150vh;
     .img-fluid {
       height: auto;
     }
