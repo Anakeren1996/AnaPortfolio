@@ -360,19 +360,19 @@ section#portfolio {
   }
 
   @media screen and (max-width: 912px) {
-    height: 75vh;
+    height: 100vh;
     .img-fluid {
       height: 25vh;
     }
     .text {
-      height: auto;
+      height: 15vh;
     }
     p {
       font-size: 2vh;
     }
   }
   @media screen and (max-width: 767px) {
-    height: 150vh;
+    height: 185vh;
     .img-fluid {
       height: auto;
     }
@@ -381,7 +381,7 @@ section#portfolio {
     }
   }
   @media screen and (width: 540px) {
-    height: 150vh;
+    height: 220vh;
   }
 }
 
