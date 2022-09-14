@@ -361,7 +361,7 @@ section#portfolio {
   }
 
   @media screen and (max-width: 912px) {
-    height: 100vh;
+    height: 110vh;
     .img-fluid {
       height: 25vh;
     }
@@ -373,7 +373,7 @@ section#portfolio {
     }
   }
   @media screen and (max-width: 767px) {
-    height: 185vh;
+    height: 240vh;
     .img-fluid {
       height: auto;
     }
@@ -382,7 +382,7 @@ section#portfolio {
     }
   }
   @media screen and (width: 540px) {
-    height: 220vh;
+    height: 280vh;
   }
 }
 

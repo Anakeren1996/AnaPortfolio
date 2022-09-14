@@ -370,7 +370,7 @@ section#portfolio .git {
 }
 @media screen and (max-width: 912px) {
   section#portfolio {
-    height: 100vh;
+    height: 110vh;
   }
   section#portfolio .img-fluid {
     height: 25vh;
@@ -384,7 +384,7 @@ section#portfolio .git {
 }
 @media screen and (max-width: 767px) {
   section#portfolio {
-    height: 185vh;
+    height: 240vh;
   }
   section#portfolio .img-fluid {
     height: auto;
@@ -395,7 +395,7 @@ section#portfolio .git {
 }
 @media screen and (width: 540px) {
   section#portfolio {
-    height: 220vh;
+    height: 280vh;
   }
 }
 
