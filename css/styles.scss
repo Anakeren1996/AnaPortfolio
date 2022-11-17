@@ -144,8 +144,7 @@ section#sobre {
   .btn {
     font-size: 1em;
     color: #fff;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to left, #a044ff, #6a3093);
+    background-color: #21002b;
     width: 35vh;
     display: inline-block;
     padding: 10px 30px;
@@ -180,7 +179,8 @@ section#sobre {
 
 section#conhecimentos {
   padding: 100px;
-  background: linear-gradient(to left, #a044ff, #6a3093);
+  // background: linear-gradient(to left, #a044ff, #6a3093);
+  background: url("/imagens/background.jpg");
   .title {
     width: 100%;
     display: flex;
@@ -206,9 +206,10 @@ section#conhecimentos {
     margin: 15px;
     padding: 10px;
     text-align: center;
+    color: #fff;
     &:hover {
-      background-color: #fff;
-      color: #131313;
+      background: #a044ff;
+      color: #fff;
       transition: 0.5s;
       border-radius: 5px 10px;
     }
@@ -251,6 +252,10 @@ section#portfolio {
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    &:hover {
+      transition: 0.5s;
+      opacity: 0.6;
+    }
   }
   .title {
     width: 100%;
