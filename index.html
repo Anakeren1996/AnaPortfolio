@@ -10,13 +10,14 @@
     <meta name="author" content="Ana Lima">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="menuToggle" onclick="menuToggle();"></div>
         <ul class="navigation">
-            <li><a href="#home" onclick="menuToggle();">Home</a></li>
+            <!-- <li><a href="#home" onclick="menuToggle();">Home</a></li> -->
             <li><a href="#sobre" onclick="menuToggle();">Sobre</a></li>
             <li><a href="#conhecimentos" onclick="menuToggle();">Conhecimentos</a></li>
             <li><a href="#portfolio" onclick="menuToggle();">Portfólio</a></li>
@@ -36,34 +37,30 @@
         </div>
     </section>
 
+    <!-- SOBRE -->
     <section id="sobre">
+        <h1 class="heading"><span>Sobre</span> mim </h1>
         <div class="row">
-            <div class="col50">
-                <h2 class="title-text">Sobre mim</h2>
-                <p>
-                    Eu sou desenvolvedora frontend com experiência em desenvolvimento de sites e landingpages utilizando
-                    HTML, CSS, Sass, Bootstrap, Javascript, angular e Wordpress.</p>
-                <p> Atuei com desenvolvedora frontend em uma agência de publicidade, desenvolvendo e realizando
-                    manutenção em sites dinâmicos com HTML, CSS, Sass, bootstrap, javascript, php e wordpress. </p>
-                <p> Sou simplesmente apaixonada por tecnologia, gosto muito de aprender coisas novas e compartilhar o
-                    conhecimento que já tenho. Tenho projetos pessoais para melhorar meus conhecimentos no meu github,
-                    além de um portfólio com alguns projetos que realizei ao longo dessa minha trajetória como
-                    desenvolvedora. Sou totalmente aberta a aprender e praticar novos aprendizados.</p>
-                <p> Estou completamente comprometida no aperfeiçoamento do meu inglês, estudando todos os dias com
-                    consistência.</p>
-                <p> Também estou finalizando um curso de angular na udemy.</p>
-                <p> Atualmente estou no 3° semestre de análise e desenvolvimento de sistemas.</p>
-                </p>
-                <a href="/Ana-desenvolvedora.pdf" target="_blank" class="btn">Currículo</a>
-            </div>
-            <div class="col50" id="foto">
-                <div class="imgBx">
-                    <img src="/imagens/sobre/foto-sobre.jpg" alt="">
+            <div class="content">
+                <div class="image">
+                    <img src="/imagens/sobre/foto-sobre.jpg" alt="Imagem do texto sobre mim">
                 </div>
             </div>
+            <div class="content">
+                <p>Eu sou a Ana, desenvolvedora Front-End, tenho experiência com desenvolvimento e manutenção de sites.
+                    Transformo desings em páginas para a internet utilizando
+                    HTML, CSS, Sass, Bootstrap, Javascript e Wordpress.</p>
+                <div class="botoes">
+                    <a href="Ana-Desenvolvedora-Atualizado.pdf" class="btn">Currículo</a>
+                    <a href="https://www.linkedin.com/in/ana-keren-lima-789118195/" class="btn">Linkedin</a>
+                    <a href="https://github.com/Anakeren1996" class="btn">Github</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- CONHECIMENTOS -->
     <section id="conhecimentos">
         <div class="title">
             <h2 class="title-text">Conhecimentos</h2>
@@ -116,15 +113,6 @@
             <!--  -->
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-angular" id="icone"></i>
-                </div>
-                <div class="text">
-                    <h3>Angular</h3>
-                </div>
-            </div>
-            <!--  -->
-            <div class="box">
-                <div class="imgBx">
                     <i class="fab fa-wordpress" id="icone"></i>
                 </div>
                 <div class="text">
@@ -152,22 +140,13 @@
         </div>
     </section>
 
+
+    <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="title">
             <h2 class="title-text">Portfólio</h2>
         </div>
         <div class="content">
-            <div class="box">
-                <div class="imgBx">
-                    <a href="https://dapper-cranachan-fc3cdf.netlify.app/" target="_blank">
-                        <img src="/imagens/portfolio/KanbanWithJavascript_img.png" alt="">
-                    </a>
-                </div>
-                <div class="text">
-                    <h3>Kanban javascript</h3>
-                </div>
-            </div>
-            <!--  -->
             <div class="box">
                 <div class="imgBx">
                     <a href="https://todo-list-javascript.vercel.app/" target="_blank">
@@ -186,7 +165,18 @@
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Website café responsivo</h3>
+                    <h3>Site responsivo</h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="box">
+                <div class="imgBx">
+                    <a href="https://dapper-cranachan-fc3cdf.netlify.app/" target="_blank">
+                        <img src="/imagens/portfolio/KanbanWithJavascript_img.png" alt="">
+                    </a>
+                </div>
+                <div class="text">
+                    <h3>Kanban javascript</h3>
                 </div>
             </div>
             <!--  -->
@@ -197,21 +187,10 @@
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Lorem</h3>
+                    <h3>Site responsivo</h3>
                 </div>
             </div>
-
-            <div class="box">
-                <div class="imgBx">
-                    <a href="https://starbuckslandingpage.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_starbucks.png" alt="">
-                    </a>
-                </div>
-                <div class="text">
-                    <h3>Lorem</h3>
-                </div>
-            </div>
-
+            <!--  -->
             <div class="box">
                 <div class="imgBx">
                     <a href="https://flower-shop-one.vercel.app/" target="_blank">
@@ -219,10 +198,10 @@
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Floricultura</h3>
+                    <h3>Site responsivo</h3>
                 </div>
             </div>
-
+            <!--  -->
             <div class="box">
                 <div class="imgBx">
                     <a href="https://candle-shop.vercel.app/" target="_blank">
@@ -230,7 +209,7 @@
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Loja de velas aromatizadas</h3>
+                    <h3>Site responsivo</h3>
                 </div>
             </div>
         </div>
@@ -239,6 +218,7 @@
         </div>
     </section>
 
+    <!-- CONTATO -->
     <section id="contato">
         <div class="title">
             <h2 class="title-text">Contato</h2>
@@ -278,10 +258,6 @@
                 Todos os direitos reservados</p>
         </div>
     </footer>
-
-
-    <script src="/js/main.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>

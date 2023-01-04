@@ -115,68 +115,54 @@ section.banner-topo {
   }
 }
 
+// SOBRE
 section#sobre {
-  padding: 100px;
-  background: #a85cf9;
-  display: flex;
-  justify-content: center;
+  padding: 2rem 7%;
+  .heading {
+    text-align: center;
+    color: #a044ff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+  }
   .row {
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-  .col50 {
-    position: relative;
-    width: 48%;
-  }
-  #foto {
-    display: flex;
-  }
-  .title-text {
-    color: #fff;
-    font-family: var(--font-secundary);
-    font-size: 8vh;
-    font-weight: bolder;
-  }
-  p {
-    text-align: justify;
-  }
-  .btn {
-    font-size: 1em;
-    color: #fff;
-    background-color: #21002b;
-    width: 35vh;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    border: none;
-    font-family: var(--font-secundary);
-    &:hover {
-      letter-spacing: 5px;
+    img {
+      width: 100%;
     }
-  }
-  .imgBx {
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    margin: 20px;
-    box-shadow: 0 5px 35px rgb(0 0 0 / 8%);
-  }
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .content {
+      width: 48%;
+      p {
+        font-size: 3vh;
+        text-align: justify;
+        font-family: var(--font-action);
+      }
+      .btn {
+        font-size: 1em;
+        color: #fff;
+        background-color: #21002b;
+        width: 50%;
+        display: inline-block;
+        padding: 10px 30px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        border: none;
+        font-family: var(--font-secundary);
+        &:hover {
+          letter-spacing: 5px;
+        }
+      }
+    }
   }
 }
 
+// CONTATO
 section#conhecimentos {
   padding: 100px;
   // background: linear-gradient(to left, #a044ff, #6a3093);
@@ -208,8 +194,8 @@ section#conhecimentos {
     text-align: center;
     color: #fff;
     &:hover {
-      background: #a044ff;
-      color: #fff;
+      background: #fff;
+      color: #21002b;
       transition: 0.5s;
       border-radius: 5px 10px;
     }
@@ -232,6 +218,7 @@ section#conhecimentos {
   }
 }
 
+// PORTFOLIO
 section#portfolio {
   padding: 100px;
   background-color: #131313;
@@ -250,7 +237,7 @@ section#portfolio {
   .box {
     width: 340px;
     margin: 20px;
-    border: 15px solid #fff;
+    border: 1px solid #fff;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
     &:hover {
       transition: 0.5s;
@@ -307,8 +294,9 @@ section#portfolio {
   }
 }
 
+// CONTATO
 section#contato {
-  padding: 60px;
+  padding: 30px;
   .title {
     width: 100%;
     display: flex;
@@ -358,6 +346,7 @@ section#contato {
   }
 }
 
+// FOOTER
 footer {
   .copyrightText {
     padding: 8px 40px;
@@ -374,6 +363,7 @@ footer {
   }
 }
 
+//
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -386,7 +376,7 @@ footer {
     width: 100%;
     height: calc(100% - 68px);
     position: fixed;
-    top: 68px;
+    top: 120px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -418,36 +408,24 @@ footer {
     background-position: center;
   }
 
+  // SOBRE
   section#sobre {
     padding: 20px;
     .row {
       flex-direction: column;
-    }
-    .row .col50 {
-      position: relative;
-      width: 100%;
-    }
-    .row .col50 .imgBx {
-      height: 300px;
-      margin-top: 20px;
-    }
-    .menu .content {
-      margin-top: 20px;
-    }
-    .menu .content .box {
-      margin-top: 10px;
-    }
-    .menu .content .box .imgBx {
-      height: 260px;
-    }
-    .title-text {
-      font-size: 3em;
-    }
-    .btn {
-      font-size: 0.8em;
+      .content {
+        width: 100%;
+        .botoes {
+          text-align: center;
+          .btn {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 
+  // CONHECIMENTOS
   section#conhecimentos {
     padding: 20px;
     .title-text {
@@ -455,6 +433,7 @@ footer {
     }
   }
 
+  // PORTFOLIO
   section#portfolio {
     padding: 20px;
     .row {

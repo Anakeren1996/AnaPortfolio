@@ -107,37 +107,36 @@ section.banner-topo p {
 }
 
 section#sobre {
-  padding: 100px;
-  background: #a85cf9;
-  display: flex;
-  justify-content: center;
+  padding: 2rem 7%;
+}
+section#sobre .heading {
+  text-align: center;
+  color: #a044ff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
 }
 section#sobre .row {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-section#sobre .col50 {
-  position: relative;
+section#sobre .row img {
+  width: 100%;
+}
+section#sobre .row .content {
   width: 48%;
 }
-section#sobre #foto {
-  display: flex;
-}
-section#sobre .title-text {
-  color: #fff;
-  font-family: var(--font-secundary);
-  font-size: 8vh;
-  font-weight: bolder;
-}
-section#sobre p {
+section#sobre .row .content p {
+  font-size: 3vh;
   text-align: justify;
+  font-family: var(--font-action);
 }
-section#sobre .btn {
+section#sobre .row .content .btn {
   font-size: 1em;
   color: #fff;
   background-color: #21002b;
-  width: 35vh;
+  width: 50%;
   display: inline-block;
   padding: 10px 30px;
   margin-top: 20px;
@@ -149,23 +148,8 @@ section#sobre .btn {
   border: none;
   font-family: var(--font-secundary);
 }
-section#sobre .btn:hover {
+section#sobre .row .content .btn:hover {
   letter-spacing: 5px;
-}
-section#sobre .imgBx {
-  position: relative;
-  width: 100%;
-  min-height: 300px;
-  margin: 20px;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-}
-section#sobre img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 section#conhecimentos {
@@ -200,8 +184,8 @@ section#conhecimentos .box {
   color: #fff;
 }
 section#conhecimentos .box:hover {
-  background: #a044ff;
-  color: #fff;
+  background: #fff;
+  color: #21002b;
   transition: 0.5s;
   border-radius: 5px 10px;
 }
@@ -241,7 +225,7 @@ section#portfolio .content {
 section#portfolio .box {
   width: 340px;
   margin: 20px;
-  border: 15px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
 }
 section#portfolio .box:hover {
@@ -298,7 +282,7 @@ section#portfolio .btn:hover {
 }
 
 section#contato {
-  padding: 60px;
+  padding: 30px;
 }
 section#contato .title {
   width: 100%;
@@ -376,7 +360,7 @@ header.sticky {
     width: 100%;
     height: calc(100% - 68px);
     position: fixed;
-    top: 68px;
+    top: 120px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -418,28 +402,14 @@ header.sticky {
   section#sobre .row {
     flex-direction: column;
   }
-  section#sobre .row .col50 {
-    position: relative;
+  section#sobre .row .content {
     width: 100%;
   }
-  section#sobre .row .col50 .imgBx {
-    height: 300px;
-    margin-top: 20px;
+  section#sobre .row .content .botoes {
+    text-align: center;
   }
-  section#sobre .menu .content {
-    margin-top: 20px;
-  }
-  section#sobre .menu .content .box {
-    margin-top: 10px;
-  }
-  section#sobre .menu .content .box .imgBx {
-    height: 260px;
-  }
-  section#sobre .title-text {
-    font-size: 3em;
-  }
-  section#sobre .btn {
-    font-size: 0.8em;
+  section#sobre .row .content .botoes .btn {
+    width: 100%;
   }
 
   section#conhecimentos {
