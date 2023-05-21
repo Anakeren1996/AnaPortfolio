@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <title>Ana Desenvolvedora</title>
@@ -9,26 +8,32 @@
     <meta name="keywords" content="front-end, desenvolvedor web, sites, landinpages, responsivo, seo">
     <meta name="author" content="Ana Lima">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="menuToggle" onclick="menuToggle();"></div>
-        <ul class="navigation">
-            <!-- <li><a href="#home" onclick="menuToggle();">Home</a></li> -->
-            <li><a href="#sobre" onclick="menuToggle();">Sobre</a></li>
-            <li><a href="#conhecimentos" onclick="menuToggle();">Conhecimentos</a></li>
-            <li><a href="#portfolio" onclick="menuToggle();">Portfólio</a></li>
-            <li><a href="#contato" onclick="menuToggle();">Contato</a></li>
-        </ul>
+    <header id="header">
+
+        <nav id="nav">
+
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="banner-topo" id="home">
-
+    <section id="banner-topo">
         <div class="img-wrapper">
-            <img src="imagens/foto-banner-portfolio.jpg" alt="">
+            <img src="/images/banner/img-banner.jpg" alt="Banner ilustrativo">
         </div>
 
         <div class="banner">
@@ -37,101 +42,103 @@
         </div>
     </section>
 
-    <!-- SOBRE -->
     <section id="sobre">
-        <h1 class="heading"><span>Sobre</span> mim </h1>
+        <h2>Sobre mim</h2>
         <div class="row">
-            <div class="content">
-                <div class="image">
-                    <img src="/imagens/sobre/foto-sobre.jpg" alt="Imagem do texto sobre mim">
+
+            <div class="conteudo">
+                <p>Sou desenvolvedora júnior, com experiência em desenvolvimento e manutenção de sites utizando HTML,
+                    CSS, sass, bootstrap, javascript, php e wordpress.</p>
+                <p>Tenho interesse em melhorar as minhas habilidades com o front, para estudar o back-end e me tornar
+                    uma desenvolvedora full-stack. Gosto e tenho interesse em aprender a desenvolver aplicativos
+                    futuramente.</p>
+                <p>Sou apaixonada por desenvolvimento pessoal, por que acredito que antes de tudo devemos ser melhores e
+                    mais leves conosco e com os outros.</p>
+                <div class="buttons">
+                    <a href="/pdf/AnaDesenvolvedoraFrontJunior.pdf" class="btn">Currículo</a>
+                    <a href="https://www.linkedin.com/in/ana-keren-lima-789118195/" class="btn">Linkedin</a>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Anakeren1996" class="btn botao-projetos">Github</a>
                 </div>
             </div>
-            <div class="content">
-                <p>Eu sou a Ana, desenvolvedora Front-End, tenho experiência com desenvolvimento e manutenção de sites.
-                    Transformo desings em páginas para a internet utilizando
-                    HTML, CSS, Sass, Bootstrap, Javascript e Wordpress.</p>
-                <div class="botoes">
-                    <a href="/AnaJuniorFrontEndDeveloper.pdf" class="btn">Currículo</a>
-                    <a href="https://www.linkedin.com/in/ana-keren-lima-789118195/" class="btn">Linkedin</a>
-                    <a href="https://github.com/Anakeren1996" class="btn">Github</a>
-                </div>
+
+            <div class="image">
+                <img src="/images/sobre/foto-sobre.jpg" alt="Foto ilustrativa para a seção sobre mim" class="img">
             </div>
 
         </div>
     </section>
 
-    <!-- CONHECIMENTOS -->
     <section id="conhecimentos">
-        <div class="title">
-            <h2 class="title-text">Conhecimentos</h2>
-        </div>
+        <h2>Conhecimentos</h2>
         <div class="content">
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-html5" id="icone"></i>
+                    <i class="fab fa-html5" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>HTML</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-css3-alt" id="icone"></i>
+                    <i class="fab fa-css3-alt" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>CSS</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-sass" id="icone"></i>
+                    <i class="fab fa-sass" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Sass</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-bootstrap" id="icone"></i>
+                    <i class="fab fa-bootstrap" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Bootstrap</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-js" id="icone"></i>
+                    <i class="fab fa-js" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Javascript</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-wordpress" id="icone"></i>
+                    <i class="fab fa-wordpress" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Wordpress</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-github" id="icone"></i>
+                    <i class="fab fa-github" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Git e Github</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <i class="fab fa-figma" id="icone"></i>
+                    <i class="fab fa-figma" alt="" role="presentation"></i>
                 </div>
                 <div class="text">
                     <h3>Figma</h3>
@@ -140,8 +147,6 @@
         </div>
     </section>
 
-
-    <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="title">
             <h2 class="title-text">Portfólio</h2>
@@ -150,66 +155,59 @@
             <div class="box">
                 <div class="imgBx">
                     <a href="https://todo-list-javascript.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_ToDo.png" alt="Imagem ToDo list">
+                        <img src="/images/portfolio/projetos/img_ToDo.png" alt="Imagem com link para um ToDo list">
                     </a>
                 </div>
                 <div class="text">
-                    <h3>ToDo list javascript</h3>
+                    <h3>ToDo list desenvolvido para usar no meu dia-a-dia e treinar minhas habilidades com javascript
+                    </h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
                     <a href="https://website-cafe.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_cafe.png" alt="Imagem website café">
+                        <img src="/images/portfolio/tutoriais/img_cafe.png" alt="Imagem com link para website Café">
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Site responsivo</h3>
+                    <h3>Wesite café tutorial</h3>
                 </div>
             </div>
-            <!--  -->
-            <div class="box">
-                <div class="imgBx">
-                    <a href="https://dapper-cranachan-fc3cdf.netlify.app/" target="_blank">
-                        <img src="/imagens/portfolio/KanbanWithJavascript_img.png" alt="">
-                    </a>
-                </div>
-                <div class="text">
-                    <h3>Kanban javascript</h3>
-                </div>
-            </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
                     <a href="https://decoracasa.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_decora.jpg" alt="Imagem website decoração interior">
+                        <img src="/images/portfolio/projetos/img_decora.jpg"
+                            alt="Imagem com link que leva para uma página de design de interiores">
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Site responsivo</h3>
+                    <h3>Website loja de decorações</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
                     <a href="https://flower-shop-one.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_flower.png" alt="Imagem loja de flores">
+                        <img src="/images/portfolio/projetos/img_flower.png"
+                            alt="Imagem com link que leva para uma página de loja de flores">
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Site responsivo</h3>
+                    <h3>Website floricultura</h3>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
                     <a href="https://candle-shop.vercel.app/" target="_blank">
-                        <img src="/imagens/portfolio/img_candle.png" alt="Imagem website de velas aromáticas">
+                        <img src="/images/portfolio/projetos/img_candle.png"
+                            alt="Imagem com link que leva para uma página de uma loja de velas aromáticas">
                     </a>
                 </div>
                 <div class="text">
-                    <h3>Site responsivo</h3>
+                    <h3>Website Velas aromáticas</h3>
                 </div>
             </div>
         </div>
@@ -218,33 +216,23 @@
         </div>
     </section>
 
-    <!-- CONTATO -->
     <section id="contato">
-        <div class="title">
-            <h2 class="title-text">Contato</h2>
-        </div>
-        <!--  -->
+        <h2>Contato</h2>
+
         <div class="content">
             <div class="box">
                 <div class="imgBx">
-                    <a href="https://www.linkedin.com/in/ana-keren-lima-789118195/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/ana-keren-lima-789118195/" target="_blank"
+                        aria-label="Perfil do LinkedIn">
+                        <span class="fab fa-linkedin-in"></span>
                     </a>
                 </div>
             </div>
-            <!--  -->
+
             <div class="box">
                 <div class="imgBx">
-                    <a href="https://github.com/Anakeren1996" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <!--  -->
-            <div class="box">
-                <div class="imgBx">
-                    <a href="https://www.instagram.com/keeren.1996/?r=nametag" target="_blank">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://github.com/Anakeren1996" target="_blank" aria-label="Perfil do Github">
+                        <span class="fab fa-github"></span>
                     </a>
                 </div>
             </div>
@@ -253,11 +241,12 @@
 
     <footer>
         <div class="copyrightText">
-            <p>Copyright 2022 <a href="https://ana-portfolio-black.vercel.app/" target="_blank">Ana Front-End
+            <p>Copyright 2023 <a href="https://ana-portfolio-black.vercel.app/">Ana Front-End
                     Developer</a>.
                 Todos os direitos reservados</p>
         </div>
     </footer>
+
 </body>
 
 </html>
