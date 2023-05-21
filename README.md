@@ -1,5 +1,5 @@
 <div>
-  <img src="/images/imagemPotfolio.png"/>
+  <img src="/images/imagemPortfolio.png"/>
 </div>
 
 <h1>Meu portfólio</h1>
