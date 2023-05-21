@@ -1,5 +1,5 @@
 <div>
-  <img src="/images/imagemPortfolioAtualizado.png"/>
+  <img src="/images/imagemPortfolio.png"/>
 </div>
 
 <h1>Meu portfólio</h1>
@@ -22,7 +22,7 @@
 <p>O trello eu usei para me auxiliar na organização do meu projeto, onde eu criei um cartão para cada seção com seus elementos que seriam melhorados no meu site.</p>
 
 <div>
-  <img src="/images/quadroKanbanPortfolio.png"/>
+  <img src="/images/quadroKanbanPortfolioAtualizado.png"/>
 </div>
 
 <p><strong>IDE utilizada:</strong></p>
